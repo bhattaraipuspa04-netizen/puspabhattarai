@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PUSPA BHATTARAI</title>
+</head>
+<style>
+    body{
+        font-family:Arial, Helvetica, sans-serif ;
+        margin: 0;
+        background:#e3e6e8;
+        
+    }
+
+    header{
+        background: #748bb8;
+        color:white;
+        padding: 40px;
+        text-align: center;
+
+    }
+
+    img{
+        width:150px;
+        height: 150;
+        border-radius: 0%;
+        border: 2px solid white;
+        margin-top: 10px;
+
+    }
+
+    nav{
+        background: #a1bbe1;
+        padding:10px;
+        text-align: center;
+    }
+
+    nav a{
+        color: white;
+        margin: 0 15px;
+        text-decoration: none;
+        font-weight: bold;
+    }
+
+    section{
+        padding: 40px;
+    }
+
+    .card{
+        background:white;
+        padding: 20px;
+        border-radius: 10px;
+        box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+        margin-bottom: 20px;
+    }
+
+    footer{
+        text-align: center;
+        background: #848689;
+        color: white;
+        padding: 15px;
+    }
+</style>
+<body>
+    <header>
+        <h1>Puspa Bhattarai</h1>
+        <p>Computing student</p>
+
+
+
+
+
+        <img src="image/IMG_20240225_053630_378.JPG" alt="puspa bhattarai">
+        </header>
+    <nav>
+        <a href="#about">About</a>
+        <a href="#skills">Skills</a>
+        <a href="#education">Education</a>
+        <a href="#Contact">Contact</a>
+    </nav>
+
+    <section id="about">
+        <div class="card">
+            <h2>About Me</h2>
+            <p>Hi, I’m Puspa Bhattarai, a BS (Hons) Computing freshman at Islington College (affiliated with London Met). I am an IT student passionate about web development and programming. I enjoy building simple websites using HTML and CSS and continuously learning new technologies to grow as a developer.<br>
+
+             
+
+        </div>
+
+    </section>
+
+
+<section id="skills">
+  <div class="card">
+    <h2>Skills</h2>
+    <p>I am a fresher, currently learning and improving my skills in IT and programming. Here are some areas I am familiar with:</p>
+    <ul>
+      <li>HTML: Basic website structure and styling</li>
+      <li>CSS: Styling simple pages</li>
+      <li>Java: Basic programming concepts (loops, conditions, functions)</li>
+      <li>MS Word & PowerPoint: Creating documents and presentations</li>
+      <li>Eager to learn new technologies and grow as a developer</li>
+    </ul>
+  </div>
+</section>
+
+
+
+    <section id="education">
+        <div class="card">
+            <h2>Education</h2>
+            <p><strong>College:</strong>IslingtonCollege</p>
+            <p><strong>Course:</strong>BSc (Hons) Computing</p>
+            <p><strong>Address:</strong>Kamal Pokhari, Kathmandu, Nepal</p>
+            
+            <div id="more" style="display:none; margin-top: 15px;">
+                <h3>Academic Records</h3>
+                <ul>
+                    <li><strong>SEE: </strong>New Horizon Higher Secondary School</li>
+                    <li><strong>+2 : </strog>New Horion Higher Secondary School</li>
+                </ul>
+            </div>
+            <button onclick="toggleEducation()" style="margin-top: 10px; padding: 8px 15px; background: #64748b; color:white; border:none; border-radius:5px; cursor:pointer;">Read more</button>
+        </div>
+    </section>
+
+
+    <section id="Contact">
+        <div class="card">
+            <h2>Contact Me</h2>
+            <p>Email:bhattaraipuspa04@gmail.com</p>
+            <p>Contact:9745911212</p>
+            <p>Linkedln:<a href="https://www.linkedin.com/in/puspabhattarai/" target="_blank">Linkedin.com/in/puspabhattarai</a></p>
+        </div>
+    </section>
+
+    <footer>
+        <p>2026  Puspa Bhattarai   |  Portfolio</p>
+    </footer>
+</body>
+
+   <script>
+    function toggleEducation(){
+        var more= document.getElementById("more");
+        var btn = event.target;
+        if(more.style.display=="none"){
+        more.style.display="block"
+    btn.innerText="Read less";
+        }else{
+            more.style.display="none";
+            btn.innerText = "read more";
+        }
+
+}
+    
+   </script>
+    
+
+</html>
